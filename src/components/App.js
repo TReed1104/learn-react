@@ -8,7 +8,9 @@ class App extends Component {
 
     render() {
         return (
-            <div> { this.state.title } </div>
+            <div>
+                <h1>{ this.state.title }</h1>
+            </div>
         );
     }
 }
