@@ -1,0 +1,14 @@
+{
+    "name": "learn-react",
+    "version": "1.0.0",
+    "description": "Learning React framework",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TReed1104/model-renderer.git"
+    },
+    "author": {
+        "name": "Tom Reed"
+    },
+    "license": "MIT"
+}
