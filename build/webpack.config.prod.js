@@ -1,20 +1,30 @@
-const webpack = require('webpack')
+'use strict'
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         filename: 'app.bundle.js',
     },
     module: {
         rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
@@ -34,6 +44,9 @@ module.exports = {
             from: resolve('content'),
             to: resolve('dist/content'),
             toType: 'dir'
-        }])
+        }]),
+        new MiniCssExtractPlugin({
+            filename: 'main.css'
+        })
     ]
 };
