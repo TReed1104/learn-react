@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 
 class App extends Component {
+    static propTypes = {
+        title: PropTypes.string
+    }
     constructor(props) {
         // Call the Component constructor to assign our props
         super(props);

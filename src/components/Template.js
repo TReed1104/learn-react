@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Template extends Component {
+    static propTypes = {
+
+    }
     constructor(props) {
         // Call the Component constructor to assign our props
         super(props);
