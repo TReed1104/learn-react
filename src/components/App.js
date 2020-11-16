@@ -1,15 +1,20 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class App extends Component {
     constructor(props) {
+        // Call the Component constructor to assign our props
         super(props);
-        this.state = { title: this.props.title };
-    }
 
+        // Procedurally convert all props to local states
+        this.state = {}
+        for (let key of Object.keys(this.props)) {
+            this.state[key] = this.props[key];
+        }
+    }
     render() {
         return (
             <>
-                <h1>{ this.state.title }</h1>
+                <h1>{this.state.title}</h1>
             </>
         );
     }
