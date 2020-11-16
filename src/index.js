@@ -8,8 +8,6 @@ import App from './components/App.js';
 const title = 'Learn React';
 
 ReactDOM.render(
-    <App title={title} />,
+    <App title={title} test="test"/>,
     document.getElementById('app')
 );
-
-module.hot.accept();
