@@ -5,7 +5,7 @@ import './assets/app.sass'
 
 import App from './components/App.js';
 
-const title = 'Learn React';
+const title = 'Template React Project';
 
 ReactDOM.render(
     <App title={title} />,

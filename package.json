@@ -1,11 +1,11 @@
 {
-    "name": "learn-react",
+    "name": "template-webpack-react",
     "version": "1.0.0",
-    "description": "Learning React framework",
+    "description": "Template project for React projects, using Webpack + Babel",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/TReed1104/model-renderer.git"
+        "url": "https://github.com/TReed1104/template-webpack-react.git"
     },
     "author": {
         "name": "Tom Reed"

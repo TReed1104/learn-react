@@ -1,2 +1,2 @@
-# learn-react
-Repo for learning how to use the React framework
+# template-webpack-react
+Template project for React projects, built using Webpack and Babel
