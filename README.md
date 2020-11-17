@@ -1,12 +1,9 @@
-# template-webpack-react
+# React Project Template
 Template project for React projects, built using Webpack and Babel - with support for local or Docker deployment.
-
-<br>
 
 ## Yarn Run Commands
 Local use with Yarn package manager.
 
-<br>
 
 ### Development - "run dev'
 Accessible on Localhost:8080
@@ -33,8 +30,6 @@ Local use with Node package manager.
 
 Please Note - This repository has been configured using Yarn and therefore does not contain a lock-file for NPM.
 
-<br>
-
 ### Development - "run dev'
 Accessible on Localhost:8080
 
@@ -57,8 +52,6 @@ npm run build
 
 ## Docker Deployment
 Deploys to Docker via Docker-compose
-
-<br>
 
 ### Development
 #### Scripted Deployment
