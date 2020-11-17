@@ -1,0 +1,27 @@
+version: "3.5"
+networks:
+    react-template-network:
+        name: react-app-network
+services:
+    nginx:
+        container_name: react-app-nginx
+        image: nginx:latest
+        restart: always
+        volumes:
+            - ./nginx/nginx-dev.conf:/etc/nginx/nginx.conf
+        ports:
+            - 8090:80
+        networks:
+            - react-app-network
+
+    react-app:
+        container_name: react-app
+        image: node:latest
+        volumes:
+            - ./app:/app
+        working_dir: /app
+        expose:
+            - "8080"
+        command: "bash -c 'yarn && yarn run dev'"
+        networks:
+            - react-app-network
