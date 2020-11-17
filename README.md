@@ -49,7 +49,7 @@ npm run dev
 ```
 
 ### Build - "run build"
-Exports to app/dist
+Compiles the project source ready for deployment, exports to app/dist.
 
 ```bash
 cd app
