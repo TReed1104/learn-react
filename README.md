@@ -4,7 +4,7 @@ Template project for React projects, built using Webpack and Babel - with suppor
 <br>
 
 ## Yarn Run Commands
-Local use using Yarn package manager.
+Local use with Yarn package manager.
 
 <br>
 
@@ -29,7 +29,7 @@ yarn run build
 <br>
 
 ## NPM Run Commands
-Local use using Node package manager.
+Local use with Node package manager.
 
 Please Note - This repository has been configured using Yarn and therefore does not contain a lock-file for NPM.
 
