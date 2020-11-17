@@ -6,12 +6,21 @@ Local use with Yarn package manager.
 
 
 ### Development - "run dev'
-Accessible on Localhost:8080
+Accessible on Localhost:8080 or IP:8080 on LAN.
 
 ```bash
 cd app
 yarn
 yarn run dev
+```
+
+### Development - "run dev-local'
+Accessible on Localhost:8080 only.
+
+```bash
+cd app
+yarn
+yarn run dev-local
 ```
 
 ### Build - "run build"
