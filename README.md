@@ -5,7 +5,7 @@ Template project for React projects, built using Webpack and Babel - with suppor
 <br>
 
 ## Yarn Run Commands
-Deploys to Docker via Docker-compose
+Local use using Yarn package manager.
 ### Development - "run dev'
 Accessible on Localhost:8080
 
