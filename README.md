@@ -6,21 +6,12 @@ Local use with Yarn package manager.
 
 
 ### Development - "run dev'
-Accessible on Localhost:8080 only.
+Accessible on Localhost:8080.
 
 ```bash
 cd app
 yarn
 yarn run dev
-```
-
-### Development - "run dev-expose'
-Accessible on Localhost:8080 or IP_ADDRESS:8080 on LAN.
-
-```bash
-cd app
-yarn
-yarn run dev-expose
 ```
 
 ### Build - "run build"
@@ -40,21 +31,12 @@ Local use with Node package manager.
 Please Note - This repository has been configured using Yarn and therefore does not contain a lock-file for NPM.
 
 ### Development - "run dev'
-Accessible on Localhost:8080 only.
+Accessible on Localhost:8080.
 
 ```bash
 cd app
 npm install .
 npm run dev
-```
-
-### Development - "run dev-expose'
-Accessible on Localhost:8080 or IP_ADDRESS:8080 on LAN.
-
-```bash
-cd app
-npm install .
-npm run dev-expose
 ```
 
 ### Build - "run build"
