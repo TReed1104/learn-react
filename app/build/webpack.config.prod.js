@@ -15,6 +15,9 @@ module.exports = {
     output: {
         filename: 'app.bundle.js',
     },
+    resolve: {
+        extensions: [ '.ts', '.tsx', '.js', '.jsx' ],
+    },
     module: {
         rules: [
             {
@@ -31,6 +34,11 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             }
         ]
     },
