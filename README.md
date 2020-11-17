@@ -24,7 +24,7 @@ yarn run dev-local
 ```
 
 ### Build - "run build"
-Exports to app/dist
+Compiles the project source ready for deployment, exports to app/dist.
 
 ```bash
 cd app
@@ -40,12 +40,21 @@ Local use with Node package manager.
 Please Note - This repository has been configured using Yarn and therefore does not contain a lock-file for NPM.
 
 ### Development - "run dev'
-Accessible on Localhost:8080
+Accessible on Localhost:8080 or IP:8080 on LAN.
 
 ```bash
 cd app
 npm install .
 npm run dev
+```
+
+### Development - "run dev-local'
+Accessible on Localhost:8080 only.
+
+```bash
+cd app
+npm install .
+npm run dev-local
 ```
 
 ### Build - "run build"
