@@ -1,6 +1,6 @@
 version: "3.5"
 networks:
-    react-template-network:
+    react-app-network:
         name: react-app-network
 services:
     nginx:
