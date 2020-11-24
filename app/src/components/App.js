@@ -10,6 +10,10 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom"
 //import { default as JsTemplate } from './Template.js';
 //import { default as TsTemplate } from "./Template.tsx";
 
+// Router route components
+import Home from './Home.tsx';
+import ErrorPage from './ErrorPage.tsx';
+
 class App extends Component {
     static propTypes = {
         title: PropTypes.string
