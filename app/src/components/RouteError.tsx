@@ -5,7 +5,7 @@ interface Props {
 interface State {
 }
 
-export default class ErrorPage extends Component<Props, State> {
+export default class RouteError extends Component<Props, State> {
     state = {}
 
     constructor(props: Props) {
