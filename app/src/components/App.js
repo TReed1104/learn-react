@@ -46,6 +46,15 @@ class App extends Component {
         return (
             <>
                 <h1>{this.props.title}</h1>
+                <BrowserRouter>
+                    <div>
+                        {linkElements}
+                    </div>
+                    <Switch>
+                        {routeElements}
+                        <Route component={ErrorPage} />
+                    </Switch>
+                </BrowserRouter>
             </>
         );
     }
