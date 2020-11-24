@@ -12,7 +12,7 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom"
 
 // Router route components
 import Home from './Home.tsx';
-import ErrorPage from './ErrorPage.tsx';
+import RouteError from './RouteError.tsx';
 
 class App extends Component {
     static propTypes = {
@@ -29,6 +29,7 @@ class App extends Component {
         let routeElements = [];
         const routes = [
             { id: "home", to: "/", text: "Home", component: Home, exact: true },
+            { id: "error", to: "/error", text: "Error", component: RouteError, exact: false }
         ];
         for (let route of routes) {
             // Create our links
@@ -52,7 +53,7 @@ class App extends Component {
                     </div>
                     <Switch>
                         {routeElements}
-                        <Route component={ErrorPage} />
+                        <Route component={RouteError} />
                     </Switch>
                 </BrowserRouter>
             </>
