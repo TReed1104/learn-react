@@ -28,8 +28,7 @@ class App extends Component {
         let linkElements = [];
         let routeElements = [];
         const routes = [
-            { id: "home", to: "/", text: "Home", component: Home, exact: true },
-            { id: "error", to: "/error", text: "Error", component: RouteError, exact: false }
+            { id: "home", to: "/", text: "Home", component: Home, exact: true }
         ];
         for (let route of routes) {
             // Create our links
